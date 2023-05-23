@@ -15,13 +15,14 @@
 
         <h1>El club viejuner</h1>
 
-        <form action"">
+        <form>
            
-            <h3>Tú:</h3>
+            <fieldset>
+            <legend>Tú:</legend>
 
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" autofocus>
             </div>
            
             <div>
@@ -54,8 +55,10 @@
                 <label for="about">Escribe algo sobre tí</label>
                 <input type="textarea" id="about" name="about" placeholder="Sobre tí">
             </div>
+        </fieldset>
 
-            <h3>Tus circunstancias:</h3>
+        <fieldset> 
+            <legend>Tus circunstancias:</legend>
             
             <div>
                 <label for="email">Correo eletrónico</label>
@@ -66,7 +69,8 @@
                 <label for="tlfo">Número de teléfono:</label>
                 <input type="tel" id="tlfo" name="tlfo" placeholder="tlfo">
             </div>
-
+        </fieldset>
+            <input type="reset" value="Reset">
             <input type="submit" value="Submit">
 
         </form>
