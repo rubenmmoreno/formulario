@@ -13,45 +13,126 @@
 
     <main>
 
-        <h1>El club viejuner</h1>
+        <h1>Los ladronzuelos de bicicletas</h1>
 
         <form>
            
             <fieldset>
-                <legend>Tú:</legend>
+      
+                <legend>Descripción:</legend>
 
                 <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" autofocus>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" autofocus>
+                </div>
+
+                <div>
+                    <label for="tiempo">Hora:</label>
+                    <input type="time" id="tiempo" name="tiempo">
+                </div>
+
+                <div>
+                    <label for="color">Color de la bicicleta:</label>
+                    <input type="color" id="mycolor" name="color" value="#990000">
                 </div>
            
+                <div>
+                    <label for="rango">Rango de precio:</label>
+                    <input type="range" id="rango" name="rango" min="200" max="3500">
+                </div>
+            </fieldset>
+            
+            <fieldset>
 
+                <legend>Tipo de bicicleta:</legend>
 
+                <div>
+                    <label for="tipo-bicicleta">Selecciona:</label><br>
+                    <select id="tipo-bicicleta" name="tipo-bicicleta">
+                        <optgroup label="Paseo">
+                            <option value="señorial">Señorial</option>
+                            <option value="anti-plebeyos">Anti-plebeyos</option>
+                            <option value="porencimadelhombro">PorEncimaDelHombro</option>
+                        </optgroup>
 
+                        <optgroup label="Montaña">
+                            <option value="gamusinos">Gamusinos</option>
+                            <option value="Hueleflores premium">Hueleflores premium</option>
+                            <option value="fango_lover">Fango lover</option>
+                        </optgroup>
 
+                        <optgroup label="Carreras">
+                            <option value="metroymedio">Metroymedio</option>
+                            <option value="3_PM_Fluo">3 de la tarde. Fluorescente edition</option>
+                            <option value="grupitors">Grupitors</option>
+                        </optgroup>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </select>
+                </div>
 
             </fieldset>
+
+            <fieldset>
+
+                <legend>Accesorios:</legend>
+
+                <div>
+                    <label for="accesorios">Selecciona:</label><br>
+                    <select id="accesorios" name="accesorios" size="6" multiple>
+                
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>
+                    <option value="bomba_aire">Bomba de aire</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+
+                <legend>¿Que marca era?:</legend>
+
+                    <div>
+                        <input list="marcas" name="marcas">
+                        <datalist id="marcas">
+                            <option value="specialized">
+                            <option value="trek">
+                            <option value="merida">
+                            <option value="scott">
+                            <option value="giant">
+                            <option value="cube">
+                            <option value="lapierre">
+                            <option value="orbea">
+                            <option value="cannondale">
+                            <option value="bmc">
+                            <option value="canyon">
+                            <option value="look">
+                            <option value="protek">
+                            <option value="megamo">
+                            <option value="pinarello">    
+                            <option value="bianchi">
+                            <option value="bh">
+                            <option value="factor">
+                            <option value="ghost">
+                            <option value="cervélo">                                
+                            <option value="argon">                                 
+                        </datalist>
+                        <input type="submit">
+                </div>
+
+            </fieldset>
+
+
+
+
+
+
+
+            
             
             <input type="reset" value="Reset">
             <input type="submit" value="Submit">
